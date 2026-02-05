@@ -1,0 +1,274 @@
+.full-itinerary-root {
+  background: #1e293b;
+  min-height: 100vh;
+  padding: 100px 20px 40px 20px;
+}
+
+.itinerary-nav-header {
+  max-width: 900px;
+  margin: 60px auto 40px auto; /* 🟢 Added margin-top to clear the Navbar */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.itinerary-nav-header h1{
+    color: whitesmoke;
+}
+
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0f172a !important; /* Force Navy */
+  color: white !important;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+  background: #1e293b !important;
+  transform: translateX(-5px); /* Visual cue for "back" */
+}
+
+.day-card-full {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  gap: 30px;
+}
+
+.day-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-number {
+  width: 50px;
+  height: 50px;
+  background: #facc15;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(250, 204, 21, 0.4);
+}
+
+.day-line {
+  width: 4px;
+  background: #e2e8f0;
+  flex-grow: 1;
+}
+
+.day-main-content {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  flex: 1;
+  display: flex;
+}
+
+.day-text-content{
+    background: #f3f4e9;
+}
+
+.day-text-content h2 {
+  color: #1e293b !important; /* Force Dark Slate */
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.day-text-content p{
+    font-weight: 200;
+    font-style:italic;
+    
+}
+
+.day-image-container {
+  width: 300px;
+  position: relative;
+}
+
+.day-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.day-time-tag {
+  background: rgba(15, 23, 42, 0.9) !important; /* Dark solid background */
+  color: #facc15 !important; /* Bright Yellow text */
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.day-description {
+  color: #475569 !important; /* Muted Dark Gray */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.day-label {
+  color: #64748b !important; /* Slate Blue */
+  font-weight: 800;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.day-line {
+  width: 4px;
+  background: #facc15; /* Same yellow as the marker */
+  flex-grow: 1;
+  opacity: 0.3; /* Subtle line connecting the numbers */
+  border-radius: 2px;
+}
+
+
+.day-tags {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background: #1e293b;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.food-guide-section {
+  max-width: 900px;
+  margin: 60px auto 0 auto;
+  padding: 40px;
+  background: #f3f4e9;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+}
+
+.food-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.food-header h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.food-intro {
+  color: black;
+  margin-bottom: 30px;
+  font-weight: 600;
+
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.food-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  transition: 0.3s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  border-color: #facc15;
+  background: #fff;
+}
+
+.food-icon {
+  font-size: 2.5rem;
+}
+
+.food-info h3 {
+  font-size: 1.1rem;
+  margin: 0 0 5px 0;
+  color: #64748b;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.food-info p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.packing-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #0f172a; /* Dark theme to stand out */
+  color: white;
+  border-radius: 24px;
+}
+
+.packing-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.packing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.packing-item {
+  display: flex;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.check-box {
+  color: #facc15;
+  font-weight: bold;
+}
+
+.packing-item p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 4px 0 0 0;
+}

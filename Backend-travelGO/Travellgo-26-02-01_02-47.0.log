@@ -1,0 +1,31 @@
+26-02-01 02:02:00.530 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /YourReviews/2 
+26-02-01 02:02:00.530 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:00.530 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:00.566 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:00.566 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:00.566 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /YourReviews/2 
+26-02-01 02:02:09.298 [http-nio-8888-exec-4] INFO  c.T.controller.AuthController - POST /auth/login email=admin@travelgo.com 
+26-02-01 02:02:09.448 [http-nio-8888-exec-4] INFO  c.T.controller.AuthController - Login successful email=admin@travelgo.com role=ROLE_ADMIN 
+26-02-01 02:02:09.598 [http-nio-8888-exec-4] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:09.598 [http-nio-8888-exec-2] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:09.598 [http-nio-8888-exec-5] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:09.602 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:09.619 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:09.619 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:09.626 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:09.642 [http-nio-8888-exec-3] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:13.542 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:13.566 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:17.295 [http-nio-8888-exec-5] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:22.096 [http-nio-8888-exec-2] INFO  c.T.controller.AdminController - DELETE /deleteHotel/25 
+26-02-01 02:02:22.097 [http-nio-8888-exec-2] INFO  com.Travellgo.service.AdminServices - AdminServices.deleteHotel id=25 
+26-02-01 02:02:22.102 [http-nio-8888-exec-2] INFO  com.Travellgo.service.AdminServices - Deleted hotel id=25 
+26-02-01 02:02:22.219 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:34.901 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:34.901 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:34.901 [http-nio-8888-exec-9] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:34.901 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:34.926 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:34.928 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:34.928 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:34.969 [http-nio-8888-exec-1] INFO  c.T.controller.AdminController - GET /allBookings 

@@ -1,0 +1,15 @@
+26-02-01 02:02:19.283 [http-nio-8888-exec-7] INFO  c.T.controller.AdminController - POST /addHotel 
+26-02-01 02:02:19.287 [http-nio-8888-exec-7] INFO  com.Travellgo.service.AdminServices - AdminServices.addHotel name=test 
+26-02-01 02:02:19.293 [http-nio-8888-exec-7] INFO  com.Travellgo.service.AdminServices - AdminServices.addHotel saved id=25 
+26-02-01 02:02:21.165 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:21.166 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:21.179 [http-nio-8888-exec-4] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:21.180 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:21.193 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:21.193 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:21.215 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:21.225 [http-nio-8888-exec-2] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:36.204 [http-nio-8888-exec-6] INFO  c.T.controller.AuthController - POST /auth/login email=mannpersonal123@gmail.com 
+26-02-01 02:02:36.360 [http-nio-8888-exec-6] INFO  c.T.controller.AuthController - Login successful email=mannpersonal123@gmail.com role=ROLE_USER 
+26-02-01 02:02:39.824 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:39.848 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /Hotels 

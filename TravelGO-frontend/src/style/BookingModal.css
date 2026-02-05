@@ -1,0 +1,134 @@
+/* 🟢 Overlay & Container */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.8); /* Dark Slate semi-transparent */
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 2.5rem;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+/* 🟢 Typography & Header */
+.modal-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #0f172a !important; /* Force visibility */
+  margin-bottom: 10px;
+}
+
+.modal-dest-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f4e9;
+  color: #8b0000;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+/* 🟢 Form Styling */
+.modal-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.input-group input, .input-group select {
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #8b0000;
+}
+
+/* 🟢 Summary Box */
+.booking-summary-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px dashed #cbd5e1;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.summary-note {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+/* 🟢 The Maroon Button */
+.modal-confirm-btn {
+  background-color: #8b0000 !important;
+  color: white;
+  padding: 18px;
+  border-radius: 15px;
+  font-weight: 900;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.modal-confirm-btn:hover {
+  background-color: #a50000 !important;
+  transform: translateY(-2px);
+}

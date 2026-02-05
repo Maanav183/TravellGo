@@ -1,0 +1,24 @@
+26-02-01 02:02:02.424 [http-nio-8888-exec-2] INFO  c.T.controller.AuthController - POST /auth/login email=admin@travelgo.com 
+26-02-01 02:02:02.593 [http-nio-8888-exec-2] INFO  c.T.controller.AuthController - Login successful email=admin@travelgo.com role=ROLE_ADMIN 
+26-02-01 02:02:02.741 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:02.741 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:02.741 [http-nio-8888-exec-1] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:02.743 [http-nio-8888-exec-5] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:02.802 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:02.808 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:02.821 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:02.830 [http-nio-8888-exec-6] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:16.106 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:16.132 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:18.954 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:20.173 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:23.882 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:23.884 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:23.894 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:23.895 [http-nio-8888-exec-5] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:23.907 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:23.923 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:23.922 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:23.946 [http-nio-8888-exec-6] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:43.353 [http-nio-8888-exec-2] INFO  c.T.c.controller.ChatController - POST /api/chat/send sessionId=session-rrg76li2g 
+26-02-01 02:02:43.354 [http-nio-8888-exec-2] INFO  c.T.chatbot.service.ChatService - Chat processMessage sessionId=session-rrg76li2g message='recommend some good hotels in jaipur' 

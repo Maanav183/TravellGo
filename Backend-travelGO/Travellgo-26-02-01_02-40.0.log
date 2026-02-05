@@ -1,0 +1,10 @@
+26-02-01 02:02:27.744 [http-nio-8888-exec-5] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:27.744 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:27.747 [http-nio-8888-exec-7] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:27.749 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:27.826 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:27.827 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:27.829 [http-nio-8888-exec-8] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:27.835 [http-nio-8888-exec-10] INFO  c.T.controller.AdminController - GET /allBookings 
+26-02-01 02:02:45.445 [http-nio-8888-exec-4] INFO  c.T.controller.AuthController - POST /auth/login email=mannpersonal123@gmail.com 
+26-02-01 02:02:45.611 [http-nio-8888-exec-4] INFO  c.T.controller.AuthController - Login successful email=mannpersonal123@gmail.com role=ROLE_USER 

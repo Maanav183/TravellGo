@@ -1,0 +1,213 @@
+/* 🟢 Card Grid Fix */
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* 🟢 THE PADDING FIX: Increase this until the text is fully visible */
+.destinations-page-container {
+  padding-top: 150px !important; /* Adjust if your title is still shy */
+  background-color: #fdfdfb; /* Your requested beige background */
+}
+
+/* Ensure the hero section doesn't have negative margins */
+.destinations-hero-section {
+  margin-top: 0 !important;
+  padding-bottom: 40px;
+}
+/* 🟢 Standardized Card Layout */
+.dest-card-container {
+  background: #f3f4e9;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures all cards in a row have same height */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.dest-card-container:hover {
+  transform: translateY(-8px);
+}
+
+/* 🟢 Force Image Aspect Ratio */
+.dest-card-image {
+  position: relative;
+  width: 100%;
+  height: 240px; /* Forces identical height for every card image */
+  overflow: hidden;
+}
+
+.dest-img-standard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dest-price-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 800;
+  color: #8b0000;
+  font-size: 0.85rem;
+}
+
+/* 🟢 Content Styling (Fixes White/Faded Text) */
+.dest-card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Pushes button to bottom */
+}
+
+.dest-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #64748b !important; /* Visible Grey-Slate */
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.dest-page-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  /* ⚪️ CHANGE 'Find Your Next' TO WHITE */
+  color: #ffffff !important; 
+  letter-spacing: -2px;
+}
+.highlight-text {
+  /* 🟡 KEEP ADVENTURE YELLOW (from image_210215.jpg) */
+  color: #facc15 !important; 
+}
+/* .dest-page-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 40px;
+  font-weight: 500;
+} */
+.dest-page-subtitle {
+  /* Lighten subtitle for readability on dark bg */
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dest-description {
+  color: #475569 !important; /* Strong Slate for readability */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Keeps descriptions to exactly 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.destinations-page-wrapper {
+  padding-top: 140px !important; /* Forces content below the fixed navbar */
+  background-color: #fdfdfb; /* Beige background to match your request */
+  min-height: 100vh;
+}
+
+/* 🟢 The Maroon Button Style */
+.dest-maroon-btn {
+  margin-top: auto; /* Aligns all buttons to the bottom of the card */
+  background-color: #8b0000 !important; /* Your specific Maroon color */
+  color: white !important;
+  padding: 14px;
+  border-radius: 1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.dest-maroon-btn:hover {
+  background-color: #a50000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  /* Glassmorphism for the filter pod too */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.search-input-wrapper, .select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff; /* Solid white inside the glass pod for contrast */
+  padding: 8px 20px;
+  border-radius: 50px;
+  flex: 1;
+}
+
+.search-icon-fixed {
+  color: #94a3b8;
+}
+
+.dest-search-input, .dest-budget-select {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.dest-search-input::placeholder {
+  color: #cbd5e1;
+}
+
+.select-icon {
+  color: #ca8a04; /* Yellow accent for the map pin */
+}
+
+/* Fix for that ugly default select arrow */
+.dest-budget-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+/* 🟢 HOVER & FOCUS STATES */
+.search-input-wrapper:focus-within, 
+.select-wrapper:hover {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.destinations-page-bg {
+  /* 🔵 REVERT TO DARK BLUE */
+  background-color: #0f172a !important; 
+  padding-top: 160px !important; 
+  min-height: 100vh;
+}

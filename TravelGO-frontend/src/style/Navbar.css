@@ -1,0 +1,234 @@
+/* ============================================================
+   1. ROOT & HOME FLOATING PILL
+   ============================================================ */
+.floating-nav-container {
+  position: fixed !important;
+  top: 25px !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  justify-content: center !important;
+  background: transparent !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-pill {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px) !important;
+  padding: 10px 30px !important;
+  border-radius: 100px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  min-height: 75px;
+  gap: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.4s ease;
+}
+
+/* ============================================================
+   2. INTERNAL GLASS BAR (The Fix for Other Pages)
+   ============================================================ */
+.nav-solid-bar {
+  top: 0 !important;
+  height: 90px !important;
+  /* Initial height */
+  background: rgba(255, 255, 255, 0.45) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  backdrop-filter: blur(25px) !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+/* 🟢 SHRINK EFFECT */
+.nav-solid-bar.scrolled {
+  height: 68px !important;
+  /* Thinner */
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(35px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Fix for inner content during shrink */
+.nav-solid-bar .nav-pill {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  min-height: unset !important;
+  /* Forces it to follow parent height */
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 50px !important;
+}
+
+/* ============================================================
+   3. SEARCH BAR FIX (Prevents the 'Floating Box' bug)
+   ============================================================ */
+.nav-search-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+  /* Light for light pages */
+  border-radius: 50px !important;
+  padding: 6px 15px !important;
+  transition: all 0.3s ease;
+  height: 42px !important;
+  /* Locked height */
+  position: relative !important;
+  /* Prevents escaping parent */
+}
+
+/* Fix for the internal page search appearance */
+.nav-solid-bar .nav-search-wrapper {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.search-form {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.search-input {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: #1e293b !important;
+  /* Dark for visibility */
+  width: 180px !important;
+  padding-left: 8px !important;
+}
+
+.search-input::placeholder {
+  color: #94a3b8 !important;
+}
+
+.search-toggle-btn {
+  background: #0f172a !important;
+  /* Dark Search Button */
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 5px 15px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+/* ============================================================
+   4. LOGO & LINKS
+   ============================================================ */
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+  /* Extra bold for that brand feel */
+  letter-spacing: -1.5px;
+  /* Tight spacing for a modern look */
+  color: #ffffff;
+  /* 'Travel' in White */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* 🟡 THE HIGHLIGHT: Coloring 'GO' */
+.logo-highlight {
+  color: #facc15;
+  /* Matching your Account button's Yellow */
+  margin-left: 2px;
+  /* Optional: adds a tiny glow like the footer in your image */
+  text-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+}
+
+/* 🟢 INTERNAL PAGES: Switch colors on the Glass Bar */
+.nav-solid-bar .logo-text {
+  color: #0f172a !important;
+  /* 'Travel' turns Dark Navy */
+}
+
+/* Keep the 'GO' yellow even on light pages, but slightly deeper for contrast */
+.nav-solid-bar .logo-highlight {
+  color: #ca8a04 !important;
+  text-shadow: none;
+}
+
+/* Subtle hover animation */
+.pill-logo:hover .logo-text {
+  transform: scale(1.03);
+}
+
+.pill-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pill-links a {
+  color: #0f172a !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* Target the container of the right-side actions */
+.pill-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 25px !important;
+  /* Forces 25px of empty space between items */
+  margin-left: 20px;
+  flex-shrink: 0;
+  /* Prevents buttons from squishing */
+}
+
+/* ============================================================
+   5. ACTION BUTTONS
+   ============================================================ */
+/* Premium Account Button styling */
+.user-profile-btn {
+  background: #facc15 !important;
+  /* Golden Yellow from your footer image */
+  color: #0f172a !important;
+  padding: 10px 24px !important;
+  border-radius: 50px !important;
+  font-weight: 800 !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(250, 204, 21, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-profile-btn:hover {
+  background: #eab308 !important;
+  transform: translateY(-2px);
+}
+
+/* Ensure 'Bookings' link is clearly separated */
+.labeled-action {
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  /* Inherits the dark navy from .nav-solid-bar */
+  white-space: nowrap;
+  /* Prevents text from wrapping to 2 lines */
+  transition: color 0.3s ease, transform 0.2s ease;
+  /* 🟢 Added smooth transition */
+}
+
+.labeled-action:hover {
+  color: #facc15 !important;
+  /* 🟢 Gold Hover */
+  transform: translateY(-1px);
+  /* 🟢 Subtle Lift */
+}

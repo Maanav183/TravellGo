@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <title>Goa Brochure - TravelGO</title>
+    <style>
+        :root {
+            --dark-blue: #0f172a;
+            --beige: #f3f4e9;
+            --yellow: #facc15;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--beige); padding: 0; margin: 0; }
+        .page { width: 210mm; height: 297mm; padding: 20mm; box-sizing: border-box; background: white; border-bottom: 10px solid var(--dark-blue); }
+        header { background: var(--dark-blue); color: white; padding: 40px; border-radius: 20px; position: relative; }
+        .logo { font-weight: 900; font-size: 24px; text-transform: uppercase; }
+        .logo span { color: var(--yellow); }
+        .dest-name { font-size: 48px; margin: 20px 0 10px; font-weight: 900; }
+        .details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+        h3 { color: var(--dark-blue); border-bottom: 2px solid var(--yellow); display: inline-block; }
+        ul { padding-left: 20px; line-height: 1.8; color: #334155; }
+        .footer { margin-top: 60px; font-size: 12px; color: #94a3b8; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="logo">Travel<span>GO</span></div>
+            <h1 class="dest-name">Manali</h1>
+            <p>3 Nights / 4 Days • Starting at ₹11,000</p>
+        </header>
+
+        <div class="details-grid">
+            <div class="column">
+                <h3>Must-Visit Attractions</h3>
+                <ul>
+                    <li>Hadimba Devi Temple</li>
+                    <li>Solang Valley Adventures</li>
+                    <li>Old Manali Cafes</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>What's Included</h3>
+                <ul>
+                    <li>4-Star Luxury Stay</li>
+                    <li>Daily Breakfast & Dinner</li>
+                    <li>Private AC Transfers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            2026 TravelGO. Handpicked heritage journeys and curated experiences.
+        </div>
+    </div>
+</body>
+</html>

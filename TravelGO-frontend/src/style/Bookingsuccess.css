@@ -1,0 +1,48 @@
+.success-page-root {
+  background: #0f172a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.success-card {
+  background: #1e293b;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 24px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ticket-body {
+  background: #f8fafc; /* Light ticket color to contrast with dark app */
+  color: #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  margin: 25px 0;
+  text-align: left;
+  position: relative;
+}
+
+.ticket-divider {
+  border-top: 2px dashed #cbd5e1;
+  margin: 20px 0;
+}
+
+.home-btn {
+  width: 100%;
+  background: #facc15;
+  color: #0f172a;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,136 @@
+.landing-container {
+  background-color: #f3f4e9 !important; /* Forces the beige color back */
+  min-height: auto;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* 1. Tighten the Hero Spacing */
+.hero-section {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #800000; /* Deep Maroon */
+  margin-bottom: 0px;
+}
+.hero-subtitle {
+  font-size: 1.8rem;
+  color: black; /* Dark Gray */
+  margin-top: 10px;
+}
+
+.hero-sentence {
+  font-size: 1.1rem;
+  color: black; /* Medium Gray */
+  margin-top: 15px;
+}
+
+/* 2. The 7-Card Gallery Layout */
+.gallery-container {
+  width: 100%;
+  max-width: 1400px; /* Ensures cards don't stretch too thin on ultra-wide screens */
+  margin: 0 auto;
+  padding: 15px 20px;
+  overflow: visible;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Uniform spacing between cards */
+}
+
+.image-item {
+  flex: 1; /* Makes all 7 cards share space equally */
+  min-width: 120px;
+  max-width: 180px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease;
+}
+
+.media-content {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover; 
+  object-position: center; 
+  display: block;
+}
+
+/* 3. The Staggered "Up/Down" Effect */
+.image-up {
+  transform: translateY(-25px);
+}
+
+.image-down {
+  transform: translateY(25px);
+}
+
+/* 4. The Mustard Button (The "Previous Look" Style) */
+.cta-container {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-get-started {
+  background-color: #d4a017; /* Mustard Yellow */
+  color: #2d3436; /* Dark text for contrast */
+  padding: 16px 60px;
+  border-radius: 40px; /* Rounded pill shape */
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(212, 160, 23, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-get-started:hover {
+  background-color: #bc8e15;
+  box-shadow: 0 12px 20px rgba(212, 160, 23, 0.4);
+}
+
+.cta-container .btn-icon {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+}
+
+.category-selector {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: #bc8e15;
+}
+
+.category-dot{
+
+  background: #bc8e15;
+}
+
+.goa-card video {
+  object-position: 50% 20%; /* Shifts the view up or down */
+}
+
+.kashmir-card video {
+  object-position: 50% 20%; /* Shifts the view up or down */
+}

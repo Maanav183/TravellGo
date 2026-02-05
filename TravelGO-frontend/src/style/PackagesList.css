@@ -1,0 +1,187 @@
+/* --- Packages Container --- */
+.packages-section-root {
+  background-color: #f3f4e9; /* Beige theme */
+  padding: 80px 24px;
+  min-height: 100vh;
+}
+
+.packages-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* --- Individual Destination Row --- */
+.destination-package-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Image on left, Plans on right */
+  gap: 40px;
+  background: #1e293b !important; 
+  padding: 30px;
+  border-radius: 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.package-dest-info img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  background: #1e293b;
+}
+
+.dest-description-text p {
+ color: #0f172a;
+}
+
+.dest-section-title h2{
+  color: white !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* --- 🔵 DARK BLUE PACKAGE CARDS --- */
+.package-plans-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.package-card {
+  background: #0f172a !important; /* Dark Blue */
+  color: white;
+  padding: 30px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  border-color: #facc15;
+}
+
+.package-card h4 {
+  color: #facc15 !important; /* Golden Yellow Title */
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.package-features li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- Price & Action --- */
+.package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.package-price {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.select-plan-btn {
+  /* 🔴 THE CHANGE: Pure Maroon Background */
+  background: #8b0000 !important; 
+  color: #ffffff !important;
+  
+  /* Styling to match your premium UI */
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem !important;
+  border: none !important;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(139, 0, 0, 0.2);
+}
+
+/* 🟢 HOVER STATE: Slightly lighter maroon and lift effect */
+.select-plan-btn:hover {
+  background: #a50000 !important; 
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(139, 0, 0, 0.35);
+}
+/* Ensure the arrow icon inside matches white */
+.select-plan-btn svg {
+  stroke: white;
+}
+
+/* --- Recommended Highlight --- */
+.package-card.recommended-border {
+  border: 2px solid #facc15 !important; /* Golden Yellow edge */
+  position: relative;
+  transform: scale(1.02);
+  z-index: 2;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: #facc15;
+  color: #0f172a;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 4px 10px rgba(250, 204, 21, 0.3);
+}
+
+/* --- Typography & Elements --- */
+.plan-category {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 1px;
+}
+
+.plan-duration {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.check-icon {
+  color: #facc15;
+}
+
+.price-label {
+  display: block;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+

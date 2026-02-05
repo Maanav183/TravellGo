@@ -1,0 +1,14 @@
+26-02-01 02:02:02.275 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /bookedSeats/1 
+26-02-01 02:02:18.811 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - POST /bookBus/2/1/1 seat=S3 
+26-02-01 02:02:18.814 [http-nio-8888-exec-10] INFO  com.Travellgo.service.UserServices - bookBus customerId=2, routeId=1, busId=1, seat=S3 
+26-02-01 02:02:18.876 [http-nio-8888-exec-10] INFO  com.Travellgo.service.UserServices - bookBus saved customerId=2, routeId=1, busId=1, seat=S3 
+26-02-01 02:02:34.605 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:34.605 [http-nio-8888-exec-4] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:34.641 [http-nio-8888-exec-3] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:34.648 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:44.975 [http-nio-8888-exec-4] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:44.975 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /YourReviews/2 
+26-02-01 02:02:44.976 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:45.020 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - GET /YourReviews/2 
+26-02-01 02:02:45.024 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:45.024 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /YourTicket/2 

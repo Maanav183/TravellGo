@@ -1,0 +1,299 @@
+/* ============================================================
+   1. ROOT LAYOUT & BACKGROUND
+   ============================================================ */
+.package-details-root {
+  background-color: #f3f4e9;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #1e293b;
+}
+
+.details-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   2. NAVIGATION & HEADER
+   ============================================================ */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #0f172a;
+}
+
+.category-tag {
+  color: #ca8a04;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.plan-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #8b0000; /* Maroon */
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.city-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+/* ============================================================
+   3. CONTENT GRID
+   ============================================================ */
+.details-main-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .details-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   4. HIGHLIGHTS BOX (Left Side)
+   ============================================================ */
+.highlights-box {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  margin-top: 40px;
+}
+
+.highlights-box h3 {
+  color: #cbd5e1;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.highlights-box ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.highlights-box li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+/* ============================================================
+   5. BOOKING CARD (Right Side)
+   ============================================================ */
+.booking-summary-card {
+  background: #1e293b;
+  color: white;
+  padding: 40px;
+  border-radius: 35px;
+  height: fit-content;
+  position: sticky;
+  top: 120px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.price-display {
+  margin-bottom: 20px;
+}
+
+.price-display .label {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.price-display h2 {
+  color: #facc15;
+  font-size: 2.5rem;
+  margin: 5px 0;
+}
+
+.price-display p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   6. BOOKING FORM
+   ============================================================ */
+.booking-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #facc15;
+}
+
+/* Date picker icon fix for Chrome */
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.total-calculation {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-calculation strong {
+  font-size: 1.4rem;
+  color: #facc15;
+}
+
+.confirm-btn {
+  width: 100%;
+  background: #ca8a04;
+  color: #0f172a;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
+
+.confirm-btn:hover {
+  transform: scale(1.02);
+}
+
+.support-text {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 15px;
+}
+
+/* ============================================================
+   7. PACKAGE INCLUSIONS SECTION
+   ============================================================ */
+.package-inclusions-section {
+  margin: 30px 0;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1e293b !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.inclusions-row {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .inclusions-row {
+    flex-direction: column;
+  }
+}
+
+.inclusion-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #1e293b !important; 
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.inclusion-icon {
+  color: #facc15;
+  background: rgba(250, 204, 21, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.inclusion-content .label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: white !important;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.inclusion-content .name {
+  font-size: 0.95rem;
+  color: white;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.inclusion-content .sub {
+  font-size: 0.8rem;
+  color: #facc15;
+  margin: 0;
+}

@@ -1,0 +1,87 @@
+/* CSS for Ola Street View Branding */
+
+/* Badge on the Card Image */
+.ola-street-view-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #a3e635;
+    /* Ola Green-ish */
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+    border: 1px solid rgba(163, 230, 53, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ola-street-view-badge svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* 360 Button in Content */
+.view-360-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #a3e635 0%, #4d7c0f 100%);
+    color: #000;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.view-360-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(163, 230, 53, 0.4);
+}
+
+/* Modal Header Branding */
+.ola-header {
+    background: #111 !important;
+    border-bottom: 2px solid #a3e635;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ola-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.ola-logo-text {
+    font-family: 'Outfit', sans-serif;
+    /* Assuming font exists */
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #a3e635;
+    letter-spacing: -0.5px;
+}
+
+.ola-brand h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #e5e5e5;
+    margin: 0;
+}
+
+.ola-brand .divider {
+    color: #444;
+    font-size: 1.2rem;
+}

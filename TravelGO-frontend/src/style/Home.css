@@ -1,0 +1,61 @@
+/* 🟢 Luxury Heading Style */
+h2.tracking-tight {
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+/* 🟢 Force stable 3-column desktop layout */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* 🟢 Image Polish */
+.group img {
+  filter: saturate(1.05) brightness(0.95);
+  transition: all 0.8s ease-in-out;
+}
+
+.group:hover img {
+  filter: saturate(1.1) brightness(1);
+}
+
+/* 🟢 Section Background Polish */
+section[ref="categoryRef"] {
+  background: radial-gradient(circle at top, #fdfdfb, #f3f4e9 80%);
+}
+/* 🟢 Stabilize Header Underline */
+h2.tracking-tight {
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+/* 🟢 Force 3 columns only on Desktop */
+@media (min-width: 1024px) {
+  .category-grid-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* 🟢 Subtle Image Saturation for Premium Feel */
+.group img {
+  filter: saturate(1.05) brightness(0.9);
+}
+
+.group:hover img {
+  filter: saturate(1.1) brightness(1);
+}
+
+/* 🟢 Clean background transition */
+section[ref="categoryRef"] {
+  background: radial-gradient(circle at top, #fdfdfb, #f3f4e9 90%);
+}
+
+.category-card {
+  height: 350px; /* Reduce height from the current large size */
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+

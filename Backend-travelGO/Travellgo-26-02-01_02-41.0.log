@@ -1,0 +1,7 @@
+26-02-01 02:02:17.893 [http-nio-8888-exec-9] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:17.930 [http-nio-8888-exec-4] INFO  c.T.controller.UserController - GET /Hotels 
+26-02-01 02:02:21.728 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:21.756 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /Packages 
+26-02-01 02:02:53.828 [http-nio-8888-exec-10] INFO  c.T.controller.UserController - POST /bookPackage/2/3 date=2026-01-31 
+26-02-01 02:02:53.836 [http-nio-8888-exec-10] INFO  com.Travellgo.service.UserServices - bookPackage customerId=2, packageId=3, date=2026-01-31 
+26-02-01 02:02:53.904 [http-nio-8888-exec-10] INFO  com.Travellgo.service.UserServices - bookPackage saved customerId=2, packageId=3 

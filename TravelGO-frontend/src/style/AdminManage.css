@@ -1,0 +1,52 @@
+.admin-manage-root { padding: 40px; max-width: 900px; margin: 0 auto; }
+
+.manage-header { text-align: center; margin-bottom: 40px; }
+
+.tab-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tab-group button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: 1px solid #cbd5e1;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.tab-group button.active {
+  background: #1e293b;
+  color: white;
+  border-color: #1e293b;
+}
+
+.inventory-list { background: white; border-radius: 16px; padding: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+
+.manage-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.manage-item-card:last-child { border-bottom: none; }
+
+.delete-btn {
+  color: #ef4444;
+  background: #fef2f2;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover { background: #ef4444; color: white; }

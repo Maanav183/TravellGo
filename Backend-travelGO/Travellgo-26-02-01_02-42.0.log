@@ -1,0 +1,16 @@
+26-02-01 02:02:01.836 [http-nio-8888-exec-5] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:01.842 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:01.870 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:01.881 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:20.495 [http-nio-8888-exec-5] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:20.495 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:20.495 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /YourReviews/2 
+26-02-01 02:02:20.521 [http-nio-8888-exec-2] INFO  c.T.controller.UserController - GET /YourReviews/2 
+26-02-01 02:02:20.521 [http-nio-8888-exec-1] INFO  c.T.controller.UserController - GET /YourTicket/2 
+26-02-01 02:02:20.543 [http-nio-8888-exec-4] INFO  c.T.controller.UserController - GET /YourBookings/2 
+26-02-01 02:02:50.229 [http-nio-8888-exec-9] INFO  c.T.controller.AuthController - POST /auth/login email=mannpersonal123@gmail.com 
+26-02-01 02:02:50.394 [http-nio-8888-exec-9] INFO  c.T.controller.AuthController - Login successful email=mannpersonal123@gmail.com role=ROLE_USER 
+26-02-01 02:02:50.435 [http-nio-8888-exec-3] INFO  c.T.controller.AuthController - POST /auth/login email=mannpersonal123@gmail.com 
+26-02-01 02:02:50.607 [http-nio-8888-exec-3] INFO  c.T.controller.AuthController - Login successful email=mannpersonal123@gmail.com role=ROLE_USER 
+26-02-01 02:02:59.225 [http-nio-8888-exec-6] INFO  c.T.controller.UserController - GET /Buses 
+26-02-01 02:02:59.255 [http-nio-8888-exec-7] INFO  c.T.controller.UserController - GET /Buses 
